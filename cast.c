@@ -8,15 +8,15 @@ e quindi stampi entrambi i valori. */
 
 int main( void ){
 
-  float floatNumber;
-  int   intNumber;
+  double doubleNumber;
+  int intNumber;
 
   printf( "Please insert a floating point number \n? " );
-  scanf( "%f", &floatNumber );
+  scanf( "%lf", &doubleNumber );
 
-  intNumber = ( int )floatNumber;
+  intNumber = ( int )doubleNumber;
 
-  printf( "Your floating point number is : %f\n", floatNumber );
+  printf( "Your floating point number is : %f\n", doubleNumber );
   printf( "After casting to int : %d\n", intNumber );
 
   return 0;
