@@ -1,5 +1,5 @@
 *.o
-cast.o
+cast
 address
 asterischi
 sumVett
