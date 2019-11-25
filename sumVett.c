@@ -9,23 +9,16 @@ e infine stampi tutti i dati e i risultati. */
 
 int main( void ){
 
-  int value1;
-  int value2;
-  int value3;
   int array[ 3 ];
   int sum;
   float media;
 
   printf( "? : " );
-  scanf( "%d", &value1 );
+  scanf( "%d", &array[ 0 ] );
   printf( "? : " );
-  scanf( "%d", &value2 );
+  scanf( "%d", &array[ 1 ] );
   printf( "? : " );
-  scanf( "%d", &value3 );
-
-  array[ 0 ] = value1;
-  array[ 1 ] = value2;
-  array[ 2 ] = value3;
+  scanf( "%d", &array[ 2 ] );
 
   sum = array[ 0 ] + array[ 1 ] + array[ 2 ];
   media = ( float )sum / 3.0;
