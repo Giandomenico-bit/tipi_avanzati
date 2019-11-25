@@ -12,12 +12,12 @@ int main( void ){
   typedef struct timespec time_s;
   time_s millis;
 
-  millis.tv_sec = 700 * 1000;
   printf( "*\n" );
   millis.tv_sec = 700 * 1000;
   printf( "*\n" );
   millis.tv_sec = 700 * 1000;
   printf( "*\n" );
+  millis.tv_sec = 700 * 1000;
 
   return 0;
 }
