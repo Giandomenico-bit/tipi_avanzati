@@ -12,12 +12,14 @@ int main( void ){
   typedef struct timespec time_s;
   time_s millis;
 
-  printf( "*\n" );
-  millis.tv_sec = 700 * 1000;
-  printf( "*\n" );
-  millis.tv_sec = 700 * 1000;
-  printf( "*\n" );
-  millis.tv_sec = 700 * 1000;
+  millis.tv_nsec = 700 * 1000 * 1000; // 700 millisecondi
+
+  puts( "*" );
+  nanosleep( &millis, NULL );
+  puts( "*" );
+  nanosleep( &millis, NULL );
+  puts( "*" );
+  nanosleep( &millis, NULL );
 
   return 0;
 }
