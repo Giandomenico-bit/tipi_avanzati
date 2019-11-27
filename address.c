@@ -6,7 +6,7 @@ float dopo averlo memorizzato in un puntatore. */
 
 #include <stdio.h>
 
-int main( void ){
+int main( ){
 
   float* floatPtr;
   float number;
