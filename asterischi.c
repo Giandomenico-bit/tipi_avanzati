@@ -7,7 +7,7 @@ distanza di 700 millisecondi l'uno dall'altro. */
 #include <stdio.h>
 #include <time.h>
 
-int main( void ){
+int main( ){
 
   typedef struct timespec time_s;
   time_s millis;
