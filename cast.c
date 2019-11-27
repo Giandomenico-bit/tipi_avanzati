@@ -6,7 +6,7 @@ e quindi stampi entrambi i valori. */
 
 #include <stdio.h>
 
-int main( void ){
+int main( ){
 
   double doubleNumber;
   int intNumber;
