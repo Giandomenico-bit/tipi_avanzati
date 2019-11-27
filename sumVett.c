@@ -7,7 +7,7 @@ e infine stampi tutti i dati e i risultati. */
 
 #include <stdio.h>
 
-int main( void ){
+int main( ){
 
   int array[ 3 ];
   int sum;
