@@ -7,19 +7,19 @@ distanza di 700 millisecondi l'uno dall'altro. */
 #include <stdio.h>
 #include <time.h>
 
-int main( ){
+int main( void ){
 
-  typedef struct timespec time_s;
-  time_s millis;
+  typedef struct timespec tempo;
+  tempo milliSecondi;
 
-  millis.tv_nsec = 700 * 1000 * 1000; // 700 millisecondi
+  milliSecondi.tv_nsec = 700 * 1000 * 1000; // 700 millisecondi
 
   puts( "*" );
-  nanosleep( &millis, NULL );
+  nanosleep( &milliSecondi, NULL );
   puts( "*" );
-  nanosleep( &millis, NULL );
+  nanosleep( &milliSecondi, NULL );
   puts( "*" );
-  nanosleep( &millis, NULL );
+  nanosleep( &milliSecondi, NULL );
 
   return 0;
 }
