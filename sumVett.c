@@ -7,23 +7,23 @@ e infine stampi tutti i dati e i risultati. */
 
 #include <stdio.h>
 
-int main( ){
+int main( void ){
 
-  int array[ 3 ];
-  int sum;
+  float array[ 3 ];
+  float res;
   float media;
 
-  printf( "? : " );
-  scanf( "%d", &array[ 0 ] );
-  printf( "? : " );
-  scanf( "%d", &array[ 1 ] );
-  printf( "? : " );
-  scanf( "%d", &array[ 2 ] );
+  printf( "%s", "Primo valore : " );
+  scanf( "%f", &array[ 0 ] );
+  printf( "%s", "Secondo valore : " );
+  scanf( "%f", &array[ 1 ] );
+  printf( "%s", "Terzo valore : " );
+  scanf( "%f", &array[ 2 ] );
 
-  sum = array[ 0 ] + array[ 1 ] + array[ 2 ];
-  media = ( float )sum / 3.0;
+  res = array[ 0 ] + array[ 1 ] + array[ 2 ];
+  media = res / 3.0;
 
-  printf( "Somma : %d\n", sum   );
+  printf( "\nSomma : %.2f\n", res );
   printf( "Media : %.2f\n", media );
 
   return 0;
