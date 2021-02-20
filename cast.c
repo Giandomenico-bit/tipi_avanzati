@@ -6,18 +6,18 @@ e quindi stampi entrambi i valori. */
 
 #include <stdio.h>
 
-int main( ){
+int main( void ){
 
-  double doubleNumber;
-  int intNumber;
+  float numero1;
+  int numero2;
 
-  printf( "Please insert a floating point number \n? " );
-  scanf( "%lf", &doubleNumber );
+  printf( "%s", "Inserisci numero ( virgola mobile ) : " );
+  scanf( "%f", &numero1 );
 
-  intNumber = ( int )doubleNumber;
+  numero2 = ( int )numero1;
 
-  printf( "Your floating point number is : %f\n", doubleNumber );
-  printf( "After casting to int : %d\n", intNumber );
+  printf( "Numero in virgola mobile : %.3f\n", numero1 );
+  printf( "Dopo il cast %d\n", numero2 );
 
   return 0;
 }
