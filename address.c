@@ -6,14 +6,13 @@ float dopo averlo memorizzato in un puntatore. */
 
 #include <stdio.h>
 
-int main( ){
+int main( void ){
 
-  float* floatPtr;
-  float number;
+  float* floatPunt;
+  float valore;
 
-  floatPtr = &number;
+  floatPunt = &valore;
+  printf( "Valore puntatore : %p\n", floatPunt );
 
-  printf( "Valore puntatore . %p\n", floatPtr );
-  
   return 0;
 }
