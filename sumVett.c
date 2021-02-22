@@ -9,21 +9,20 @@ e infine stampi tutti i dati e i risultati. */
 
 int main( void ){
 
-  float array[ 3 ];
-  float res;
+  int array[ 3 ], res;
   float media;
 
   printf( "%s", "Primo valore : " );
-  scanf( "%f", &array[ 0 ] );
+  scanf( "%d", &array[ 0 ] );
   printf( "%s", "Secondo valore : " );
-  scanf( "%f", &array[ 1 ] );
+  scanf( "%d", &array[ 1 ] );
   printf( "%s", "Terzo valore : " );
-  scanf( "%f", &array[ 2 ] );
+  scanf( "%d", &array[ 2 ] );
 
   res = array[ 0 ] + array[ 1 ] + array[ 2 ];
-  media = res / 3.0;
+  media = ( float )res / 3.0;
 
-  printf( "\nSomma : %.2f\n", res );
+  printf( "\nSomma : %d\n", res );
   printf( "Media : %.2f\n", media );
 
   return 0;
