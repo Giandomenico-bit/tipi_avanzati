@@ -6,13 +6,13 @@ e quindi stampi entrambi i valori. */
 
 #include <stdio.h>
 
-int main( void ){
+int main( void ) {
 
-  float numero1;
+  double numero1;
   int numero2;
 
   printf( "%s", "Inserisci numero ( virgola mobile ) : " );
-  scanf( "%f", &numero1 );
+  scanf( "%lf", &numero1 );
 
   numero2 = ( int )numero1;
 
