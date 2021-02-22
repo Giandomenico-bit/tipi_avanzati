@@ -12,12 +12,20 @@ int main( void ){
   int array[ 3 ], res;
   float media;
 
-  printf( "%s", "Primo valore : " );
+  printf( "%s", "Inserisci tre valori :\n" );
+
+  printf( "\n%s", ": " );
   scanf( "%d", &array[ 0 ] );
-  printf( "%s", "Secondo valore : " );
+  printf( "%s", ": " );
   scanf( "%d", &array[ 1 ] );
-  printf( "%s", "Terzo valore : " );
+  printf( "%s", ": " );
   scanf( "%d", &array[ 2 ] );
+
+  printf( "\n%s\n", "Dati iniziali : " );
+
+  printf( "\nnumero[ %d ] = %d\n", 0, array[ 0 ] );
+  printf( "numero[ %d ] = %d\n", 1, array[ 1 ] );
+  printf( "numero[ %d ] = %d\n", 2, array[ 2 ] );
 
   res = array[ 0 ] + array[ 1 ] + array[ 2 ];
   media = ( float )res / 3.0;
