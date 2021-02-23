@@ -10,7 +10,7 @@ e infine stampi tutti i dati e i risultati. */
 int main( void ){
 
   int array[ 3 ], res;
-  float media;
+  double media;
 
   printf( "%s", "Inserisci tre valori :\n" );
 
@@ -28,7 +28,7 @@ int main( void ){
   printf( "numero[ %d ] = %d\n", 2, array[ 2 ] );
 
   res = array[ 0 ] + array[ 1 ] + array[ 2 ];
-  media = ( float )res / 3.0;
+  media = ( double )res / 3.0;
 
   printf( "\nSomma : %d\n", res );
   printf( "Media : %.2f\n", media );
